@@ -5,4 +5,5 @@ urlpatterns = [
     path('hello/', views.firstView),
     path('now_date/', views.datetimeView),
     path('goodbye/', views.goodbyeView),
+    path('car/', views.carListView),
 ]

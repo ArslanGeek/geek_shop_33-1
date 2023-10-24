@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+</head>
+<body>
+<ul>
+    {% for i in car_key %}
+        <li>
+            <h1>{{ i.title }}</h1>
+            <img src="{{ i.image.url }}" alt="">
+            <p><strong>{{ i.description }}</strong></p>
+            <p>{{ i.model_of_car }}</p>
+            <p>{{ i.cost }}</p>
+            <p>{{ i.year }}</p>
+            <p>{{ i.created_at }}</p>
+        </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
